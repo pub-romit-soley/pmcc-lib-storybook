@@ -19,7 +19,12 @@
       "dom"
     ],
      "module": "commonjs",
-     "allowJs": true
+     "allowJs": true,
+     "types": ["jest", "jquery", "jsdom", "node"],
+     "emitDecoratorMetadata": true,
+     "exclude": ["src/test.ts", "src/**/*.spec.ts", "**/*.stories.ts", "src/jest-config"],
+"skipLibCheck": true,
+"jest": "jest --watch"
   },
   "angularCompilerOptions": {
     "enableIvy": true,
